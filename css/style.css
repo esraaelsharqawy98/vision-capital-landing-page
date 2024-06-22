@@ -1,0 +1,328 @@
+/* Base styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+/* CSS custom properties for theme colors */
+:root {
+  --main-color: #23155b;
+  --secondary-color: #8053ff;
+  --white: #fff;
+  --grey: #928cab;
+  --grey-light: #D4CDEF;
+  --green: #00d386;
+}
+.shadow {
+  box-shadow: 0px 14px 64px -4px #23155b0d;
+}
+/* Text color classes */
+.text-dark-blue {
+  color: var(--main-color);
+}
+.text-purple,
+.btn-outline-purple {
+  color: var(--secondary-color);
+}
+.text-grey {
+  color: var(--grey);
+}
+.text-grey-light{
+  color: var(--grey-light);
+}
+.text-green {
+  color: var(--green);
+}
+/* Button styles */
+.btn{
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.btn-purple {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+.btn-purple:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+.btn-purple:active {
+  background-color: var(--main-color) !important;
+  color: var(--white) !important;
+}
+.btn-outline-purple,.btn-outline-purple:hover {
+  background-color: var(--white);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  transition: all 0.15s ease-in-out;
+}
+.btn-outline-purple:active {
+  background-color: var(--main-color) !important;
+  color: var(--white) !important;
+}
+
+/* header style */
+header {
+  padding: 24px 0px;
+}
+header nav .navbar-brand{
+  padding: 4px;
+}
+header nav .navbar-brand img {
+  width: 52.44px;
+  height: 60px;
+}
+header nav .navbar-brand span {
+  font-size: 18px;
+  line-height: 40px;
+}
+header nav .nav-right{
+  gap:60px;
+}
+header nav .navbar-nav .nav-item .nav-link {
+  padding: 4px;
+  font-size: 16px;
+  line-height: 28px;
+}
+header nav .navbar-nav .btn {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* hero section style */
+.hero-section {
+  padding-bottom: 200px;
+  height: 100vh;
+}
+.hero-section .container {
+  background: #fbfaff url("../images/bg.png") no-repeat center;
+  background-size: 100% 100%;
+  height: 100%;
+}
+.hero-section .hero-content{
+  padding: 10px;
+}
+.hero-section .hero-content h1 {
+  font-size: clamp(46px,6vw, 64px);
+  line-height: clamp(1.2em, 6vw, 96px);
+}
+
+.hero-section .hero-content p {
+  font-size: clamp(16px,6vw, 24px);
+  line-height: clamp(24px, 3vw + 1.5rem, 36px);
+}
+.hero-section .hero-content .btn {
+  width: 232px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/* features style */
+.features .title {
+  padding-bottom: 48px;
+}
+.features .title p {
+  font-size: 24px;
+  line-height: 36px;
+}
+.features .title p::before , .features .title p::after{
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #f4f5f4;
+}
+.features img {
+  border-radius: 8px;
+}
+
+/* info section style */
+.info {
+  padding: 200px 0;
+}
+.info .title h2 {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+}
+.info ul {
+  gap: 12px;
+}
+.info ul li {
+  border-radius: 8px;
+  padding: 24px;
+}
+.info ul li span {
+  font-size: 24px;
+  line-height: 28px;
+}
+.info ul li p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* projects section style */
+.projects {
+  background: url("../images/bg2.png") no-repeat center,
+    linear-gradient(180deg, #fbfaff 29.73%, #ffffff 100%);
+  background-size: cover;
+  border-top-left-radius: 250px;
+  padding: 200px 0px;
+}
+.projects .title{
+  gap: 12px;
+}
+.projects .title h5 {
+  font-size: 18px;
+  line-height: 28px;
+}
+.projects .title h2 {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+}
+.projects .title p {
+  max-width: 616px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.projects ul li .icon {
+  font-size: 18px;
+  line-height: 28px;
+}
+.projects ul li p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.projects ul li p.description {
+  font-size: 14px;
+}
+.projects ul .item {
+  border-radius: 8px;
+}
+.projects .btn {
+  width: 232px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 36px;
+}
+/* investors section style */
+.investors {
+  background: url("../images/bg3.png") no-repeat center,
+    linear-gradient(180deg, #fbfaff 29.73%, #ffffff 100%);
+  background-size: cover;
+  border-top-right-radius: 250px;
+  padding: 200px 0px;
+}
+.investors .title h5 {
+  font-size: 18px;
+  line-height: 28px;
+}
+.investors .title h2 {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+}
+.investors .title p {
+  max-width: 616px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.investors ul li .icon {
+  font-size: 18px;
+  line-height: 28px;
+}
+.investors ul li p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.investors ul li p.description {
+  font-size: 14px;
+}
+.investors ul .item {
+  border-radius: 8px;
+}
+.investors .btn {
+  width: 232px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/* about section style */
+.about {
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+.about .bg-img {
+  width: 493px;
+  height: 565px;
+  left: 20rem;
+  top:8rem;
+  z-index: -1;
+}
+.about .image-wrapper img {
+  border-radius: 0px 200px 200px 0px;
+}
+.about .about-text {
+  gap: 52px;
+  padding-left: 68px;
+}
+.about .title h2 {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+}
+.about .about-text p {
+  max-width: 590px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* sponseors section style */
+#sponsors{
+  padding-bottom: 200px;
+}
+
+/* footer style */
+footer{
+  padding: 179px 0px;
+  border-top-left-radius:250px;
+  background: var(--main-color) url("../images/bg4.png") no-repeat center;
+  background-size: cover;
+}
+footer .title h2 {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+}
+footer .title p {
+  font-size: 18px;
+  line-height: 28px;
+}
+footer .form label{
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .form input{
+max-width:340px;
+height: 48px;
+padding: 14px 12px;
+border-radius: 8px;
+border: 2px solid #F4F5F4;
+}
+footer .form .btn {
+  width: 232px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 36px;
+}
+footer .social a{
+  text-decoration: none;
+}
+footer .links a{
+  font-size: 14px;
+  line-height: 21px;
+}
